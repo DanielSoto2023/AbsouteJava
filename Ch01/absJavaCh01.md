@@ -182,11 +182,158 @@ isnt
 
 22. result would be 3
 
-23.
+23. result would be
 
 4
 
 3
+
+Class String yaey
+
+```
+String example = "I did it!";
+String noun = "Amongus ";
+String sentance;
+sentance = noun + "are cool.";
+String solutoin = "The answer is " + 42; 
+# is just
+String solution2 = "The answer is " + "42";
+
+if you sysout("100" + 42); you get 10042
+if you sysout(100 + 42); you get 142
+```
+
+int n = "Hello".length(); would get you n = 5
+
+#you can also do 
+String greeting = "Airpod Shotty Ima catch a body";
+int n = greeting.length();
+
+
+#Returns booleans
+String Shoe = "One Two Buckle Shoe";
+
+Shoe.equals("One Two Buckle Shoe"); returns true
+
+Shoe.equals("Three Four Buckle Some More"); false
+
+Shoe.equals("Five Six Nike Kicks"); False
+
+equalsIgnoreCase(Give_String);
+
+String MountainDew = "I slept 5 hours";
+
+MountainDew.equalsIgnoreCase("i SLEPT 5 HOURS"); true
+
+MountainDew.toLowerCase(); returns "i slept 5 hours"
+
+MountainDew.toUpperCase(); returns "I SLEPT 5 HOURS"
+
+String Example = " HMMMMMM ";
+
+Example.trim() returns "HMMMMMM"
+
+Example.charAt(1) returns 'H'
+
+Example.charAt(0) returns ' ' (allegadly)
+
+String sample = "abcdefG";
+sample.substring(2) returns "cdefG" count from 0,1,2 include 2
+
+sample.substring(2, 5) returns "cde"
+
+#displays -1 if not found
+
+String greeting = "Fuck Yimmu Audul";
+
+greeting.indexOf("Yimmu"); returns 5
+
+greeting.indexOf("Love"); returns -1
+
+String greeting = "Mary, Mary quite contrary";
+
+greeting.indexOf("Mary", 1); returns 6
+
+greeting.indexOf("Mary", 8); returns -1 cuz theres not 8
+
+entry = "adventure";
+entry.compareTo("zoo"); returns a negative number
+entry.compareTo("adventure"); returns 0
+entry.compareTo("above"); returns a positive
+
+#treats uppercase as lowercase
+entry.compareToIgnoreCase("Zoo"); returns positive
+entry.compareToIgnoreCase("adventure"); returns 0
+entry.compareToIgnoreCase("Adventure"); returns positive number
+
+#Escape Sequences
+```
+\" Double Quote
+\' Single Quote
+\\ Backslash
+\n New line
+\r cariage return go to beginning of current line
+\t Tab, white space up to the next tab stop
+```
+
+String name = "Amongus";
+
+name = "Amongus " + name;
+
+sysout(name); would result "Amongus Amongus"
+
+24. Timeis money
+
+25. 7,  b
+
+26. abcd
+
+27. 
+abc
+
+def
+
+28. abc\ndef
+
+29. "HELLO TONY"
+
+30. "2 + 2 = 4"
+
+"2 + 2 = 22"
+
+bc it does it from left to right
+
+31.
+
+What 
+
+32. because it isnt test = test.toLowerCase();
+
+GLOBAL VARIABLES
+
+public static final int EXAMPLE_EXAMPLE = 10;
+
+^ must be placed outside main
+
+final int dodobird = 20;
+
+^ must be inside a main
+
+33. Block comments and line comments
+
+34. "Hello" and "student"
+
+35. fully typed out
+
+36. 
+
+```
+public static final int ANSWER = 43;
+```
+
+
+
+
 
 
 
