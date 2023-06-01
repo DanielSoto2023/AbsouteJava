@@ -1,4 +1,3 @@
-import java.nio.charset.MalformedInputException;
 
 public class Exercise_01_06_Bicyclists {
     public static void main(String[] args) {
