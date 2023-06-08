@@ -26,7 +26,7 @@ c means charecter example %2c or %c
 
 To use it for example
 
-```
+```java
 double value = 12.123;
 System.out.printf("Start%8.2fEnd", value);
 System.out.println();
