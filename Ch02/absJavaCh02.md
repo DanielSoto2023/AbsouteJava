@@ -2,23 +2,24 @@
 
 Sysout println ends the line at the end of the string.
 
-System.out.println();
+`System.out.println();`
 
 Sysout print does not ned the line at the end of the string.
 
-System.out.print();
+`System.out.print();`
 
 Sysout Printf lets u format the results.
 
-Conversion Charecter
+---
+## Conversion Character
 
-d means decimal (ordinary) integer examples would be %5d or %d
+**`d`** means decimal (ordinary) integer examples would be` %5d` or` %d`
 
 f means fixedpoint (everyday notation) floating point example %6.2f or %f
 
-e means e-notation floating point, example %8.3e or %e
+e means e-notation floating point, example` %8.3e` or `%e`
 
-g means general floating point example %8.3g or %g
+g means general floating point example `%8.3g` or` %g`
 
 s means string example %12s or %s
 
@@ -64,7 +65,7 @@ public class CodeYeah {
 
 Code for DecimalFormat
 
-```
+```java
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
@@ -84,7 +85,7 @@ public class CodeYeah {
 
 how to use scanner
 
-```
+```java
 Scanner keyboard = new Scanner(System.in);
 int myInt = keyboard.nextInt(); / 23
 long myLong = keyboard.nextLong();

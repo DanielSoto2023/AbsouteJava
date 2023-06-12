@@ -68,3 +68,31 @@ public class PP_10_ThreeItems {
         
     }
 }
+/** OUTPUT
+Input name of item 1:
+Soda
+Input quantity of item 1:
+4
+Input price of item 1:
+5.50
+Input name of item 2:
+Toy
+Input quantity of item 2:
+3
+Input price of item 2:
+1.23
+Input name of item 3:
+car
+Input quantity of item 3:
+2
+Input price of item 3:
+10000
+Your bill:
+item                 Quantity   Price      Total
+Soda                 4          5.50       22.00
+Toy                  3          1.23       3.69
+car                  2          10000.00   20000.00
+Subtotal                                   20025.69
+6.25% sales tax                            1251.61
+Total                                      21277.30
+ */
