@@ -1,4 +1,4 @@
-package Ch02.Exercises;
+
 
 public class PP_02_PigLatin2 {
     public static void main(String[] args) {

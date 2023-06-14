@@ -1,4 +1,3 @@
-package Ch02.Exercises;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Ch02.Exercises;
+
 import java.util.Scanner;
 public class PP_11_ClassroomExercies {
     public static void main(String[] args) {

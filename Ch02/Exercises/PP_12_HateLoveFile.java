@@ -1,4 +1,4 @@
-package Ch02.Exercises;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -13,10 +13,19 @@ public class PP_12_HateLoveFile {
         System.out.println("File Not Found");
         System.exit(0);
        }
-       String hateInput = fileIn.nextLine();
-       System.out.println(hateInput);
+       String LineOfTextInput = fileIn.nextLine();
        fileIn.close();
-       
+    int PositionOfHate = LineOfTextInput.indexOf("hate",1);
+    int LengthOfTextInput = LineOfTextInput.length();
+    String LineOfTextInputPreHate = LineOfTextInput.substring(0, PositionOfHate);
+    PositionOfHate += 4;
+    String LineOfTextInputPostHate = LineOfTextInput.substring(PositionOfHate , LengthOfTextInput);
+    String AddedLove = LineOfTextInputPreHate + "love";
+    String RepairedLineOfText = AddedLove + LineOfTextInputPostHate;
+    System.out.println(RepairedLineOfText);
+     /*Output
+      I love programming!
+     */  
     }
 
 
