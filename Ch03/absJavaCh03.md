@@ -156,12 +156,52 @@ boolean isPositive;
 isPositive = (number > 0);
 
 boolean isPosivite = (number > 0)
+
+```
+# Flow Of Controll
+
+theres a prededence chart at pv 160 PDF or pg 126 book
+
+# loops
+`while` loops check boolean then activate the body,
+
+`do-while` loops once then checks the boolean and if its false it stops
+
+
+check `WhileDemo.java` for an example
+
+there is another example
+where they average a list of scores
+
+check `Averager.java` 
+
+` for loop` 
+```java
+for (n=1; n<= 10; n++)
+    sum = sum + n;
 ```
 
-#ended pg 125 or p163
+the `for loop` is broken down into
+
+for (Initializaiton; boolean expressoin; update)
+
+which means you need a `true` or `false` statement and something to trigger it, and something to make sure it dont go infinate if you dont want to.
+
+# DO NOT PLACE `;` AFTER YOUR LOOPS `for();` is not bueno but `for()` is :)
+
+there are `statements` to get out of a `loop`, like the matrix, for example `break;` breaks you out of the nearest `loop` or `switch`, while `continue;` statement ends the current iteration of the `loop`.
+
+"Every code can be built to not use `break;` or `continue;`" -Absolute Java 5th Edition
+
+there is an `exit` statement that ends the program it is
+
+```java
+System.exit(0);
+```
+
+most bugs in loops are `infinate` or `one off errors` which is you making a misteak in the boolean area.
 
 
 
 
-
-
+left off at page 152 or pg 186
