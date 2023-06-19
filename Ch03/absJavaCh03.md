@@ -205,3 +205,74 @@ most bugs in loops are `infinate` or `one off errors` which is you making a mist
 
 
 left off at page 152 or pg 186
+
+basically code better and dont mix `||` and `&&` 
+
+[comment]: <> (a comment to rant in, this hotel wifi is so shit, but i should say the pool that i havent tried out is packed and so i should probably enjoy it on monday, ong, fr, not like anybody is gonna see this other than my teacher, and if push comes to shove i can just delete it frfrfr. Ong, no cap)
+
+[comment]: <> (maybe coding while stressed bc you procrastinated isnt the beeeeeeeeeeeeest idea ong. fr, day log 6/18 kinda stressed)
+
+assertion checks are cool, if you do
+
+```java
+int n = 0;
+int sum = 0;
+assert (n==0) && (sum == 0);
+```
+it will return nothing in the console but if it `false` it will return an `error` the syntax is `assert Boolean_Expression;`
+
+# random number generation
+
+[comment]: <> (since i learned this neat commenting trick i might put in opinions, dunno, feelin like it maybe)
+
+the `random` numbers are really `psudorandom` because java uses a set `seed` 
+
+you have to import random with ` java.util.Random;` then you have to do the same thing you did with 
+```java
+Scanner keyboard = new Scanner(System.in)
+```
+and then you do it with random, note you dont need to name it `keyboard` or `randomGenerator` you can name it anything.
+```java
+Random randomGenerator = new Random();
+```
+to generate a number you do
+```java
+int r = randomGenerator.nextInt();
+```
+ill be going over the special ways you can modify by editing the thing in the parentasis 
+
+
+range of all positive intergers u leave it empty `()`
+
+from range 0 to n-1 `(n)`
+
+you can offset by adding `()` + `n`
+where  it is a number example being
+
+```java
+int r = randomGenerator.nextInt(3) + 4;
+```
+which would generate a `0,1, or 2` and then add 4
+
+you can do 
+```java
+double r = randomGenerator.nextDouble();
+```
+
+and it will return a number equal or greater to `0.0` but less than `1.0`
+
+example code in 
+`CoinFlipDemo.java`
+
+`Math.random()` is a meathod that does the same as `.nextDouble` so well that java internally creates a random object to call `.nextDouble`  to get an `int` from range 1 to 6 you would do
+```java
+int num = (int) (Math.random() * 6) + 1;
+```
+[comment]: <> (so hard to stay focued its only been 30 mins aaaaa made it to the programming projects yaey )
+
+[comment]: <> (cant wait to re-read this old stuff and be like "this is where my decent into madness started")
+
+[comment]: <> (not to mention this hotel room smells like SMOKE because we got a smokers room and some shit is burnt like cmon please we paid money to gamble at YOUR casino and this is the quality we get at least the bath rooms are clean ong)
+
+# programming projects start on pg 168 or 202
+
