@@ -32,7 +32,7 @@ public class PP_03ChildHeight { //open 1
                 keyboard.nextLine();
                 if (genderChecker.equals("M")|| genderChecker.equals("m"))
                     {
-                        maleChildHeightInches = ((motherHeightInches * 13/12) + fatherHeightInches);
+                        maleChildHeightInches = ((motherHeightInches * 13/12) + fatherHeightInches)/2;
                         maleChildHeightFeet = maleChildHeightInches/12;
                         maleChildHeightInches =  maleChildHeightInches % 12;
                         System.out.println("Your child's height is");
@@ -43,7 +43,7 @@ public class PP_03ChildHeight { //open 1
                     }
                 else if (genderChecker.equals("f") || genderChecker.equals("F"))
                     {
-                        femaleChildHeightInches = ((fatherHeightInches * 12/13) + motherHeightInches);
+                        femaleChildHeightInches = ((fatherHeightInches * 12/13) + motherHeightInches)/2;
                         femaleChildHeightFeet = femaleChildHeightInches/12;
                         femaleChildHeightInches =  femaleChildHeightInches % 12;
                         System.out.println("Your child's height is");
@@ -73,7 +73,7 @@ public class PP_03ChildHeight { //open 1
                     keyboard.nextLine();
                     if (genderChecker.equals("M") || genderChecker.equals("m"))
                         {
-                            maleChildHeightInches = ((motherHeightInches * 13/12) + fatherHeightInches);
+                            maleChildHeightInches = ((motherHeightInches * 13/12) + fatherHeightInches)/2;
                             System.out.println("Your child's height is");
                             System.out.println("Inches: " + maleChildHeightInches);
                             genderFailLoop = false;
@@ -81,7 +81,7 @@ public class PP_03ChildHeight { //open 1
                         }
                     else if (genderChecker.equals("F")|| genderChecker.equals("f"))
                     {
-                        femaleChildHeightInches = ((fatherHeightInches * 12/13) + motherHeightInches);
+                        femaleChildHeightInches = ((fatherHeightInches * 12/13) + motherHeightInches)/2;
                         System.out.println("Your child's height is");
                         System.out.println("Inches: " + femaleChildHeightInches);
                         genderFailLoop = false;
