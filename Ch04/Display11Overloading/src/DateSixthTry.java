@@ -1,12 +1,86 @@
 import java.util.Scanner;
 
-public class DateFifthTry {
-
-
+public class DateSixthTry {
     private String month;
     private int day;
-    private int year; // a four diget number
+    private int year;
 
+
+    public void setDate(int monthInt, int day, int year)
+    {
+        if (dateOK(monthInt, day, year))
+        {
+            this.month = monthString(monthInt);
+            this.day = day;
+            this.year = year;
+        }
+        else
+        {
+            System.out.println("Fatal Error");
+            System.exit(0);
+        }
+    }
+}
+
+    public void setDate(String monthString, int day, int year)
+    {
+        if (dateOK(monthString, day, year))
+        {
+            this.month = monthString;
+            this.day = day;
+            this.year = year;
+        }
+        else
+        {
+            System.out.println("Fatal Error");
+            System.exit(0);
+        }
+    }
+
+    public void setDate(int year)
+    {
+        setDate(1,1,year);
+    }
+
+    private boolean dateOk(int monthInt, int dayInt, int yearInt)
+    {
+        return ( (monthInt >=1) && (monthInt <=12) && (dayInt>= 1) && (dayInt<=31) && (yearInt >= 1000) && (yearInt <= 9999) );
+    }
+
+
+    private boolean dateOk(String monthString, int dayInt, int yearInt)
+    {
+        return (monthOk(monthString) && (dayInt >=1)&& (dayInt <= 31) && (yearInt >= 1000) && (yearInt <=9999));
+    }
+
+    private boolean monthOk(String month)
+    {
+        return (month.equals("January") || month.equals("February") || month.equals("March") || month.equals("April") || month.equals("May") || month.equals("June") || month.equals("July") || month.equals("August") || month.equals("September") || month.equals("October") || month.equals("November") || month.equals("December") );
+    }
+
+        public void readInput()
+    {
+        boolean tryAgain = true;
+        Scanner keyboard = new Scanner(System.in);
+        while (tryAgain)
+        {
+            System.out.println("Enter month, day and year");
+            System.out.println("as three intergers: ");
+            System.out.println("do not use commas or other puncutations.");
+            int monthInput = keyboard.nextInt();
+            int dayInput = keyboard.nextInt();
+            int yearInput = keyboard.nextInt();
+            if (dateOk(monthInput,dayInput,yearInput))
+            {
+                setDate(monthInput, dayInput, yearInput);
+                tryAgain = false;
+            }
+            else
+            {
+                System.out.println("Illegal date. Reenter input.");
+            }
+        }
+    }
     public String toString()
     {
         return (month + " " + day + ", " + year);
@@ -18,21 +92,15 @@ public class DateFifthTry {
         System.out.println(month + " " + day + ", " + year);
     }
 
-    public boolean equals(DateFifthTry otherDate)
+    public boolean equals(DateSixthTry otherDate)
     {
         return ( ( month.equalsIgnoreCase(otherDate.month)) && (day == otherDate.day) && (year == otherDate.year));
     }
 
-    public boolean precedes(DateFifthTry otherDate)
+    public boolean precedes(DateSixthTry otherDate)
     {
         return ( ( year < otherDate.year) || (year == otherDate.year && getMonth() < otherDate.getMonth()) || (year == otherDate.year && month.equals(otherDate.month) && day < otherDate.day));
     }
-
-    private boolean dateOk(int monthInt, int dayInt, int yearInt)
-    {
-        return ( (monthInt >=1) && (monthInt <=12) && (dayInt>= 1) && (dayInt<=31) && (yearInt >= 1000) && (yearInt <= 9999) );
-    }
-
 
     public String monthString(int monthNumber)
     {
@@ -68,48 +136,6 @@ public class DateFifthTry {
                 return "Error"; //to keep the compiler happy
         }
     }
-
-
-    
-    public void readInput()
-    {
-        boolean tryAgain = true;
-        Scanner keyboard = new Scanner(System.in);
-        while (tryAgain)
-        {
-            System.out.println("Enter month, day and year");
-            System.out.println("as three intergers: ");
-            System.out.println("do not use commas or other puncutations.");
-            int monthInput = keyboard.nextInt();
-            int dayInput = keyboard.nextInt();
-            int yearInput = keyboard.nextInt();
-            if (dateOk(monthInput,dayInput,yearInput))
-            {
-                setDate(monthInput, dayInput, yearInput);
-                tryAgain = false;
-            }
-            else
-            {
-                System.out.println("Illegal date. Reenter input.");
-            }
-        }
-    }
-
-    public void setDate(int month,int day, int year)
-    {
-        if (dateOk(month,day,year))
-        {
-            this.month = monthString(month);
-            this.day = day;
-            this.year = year;
-        }
-        else
-        {
-            System.out.println("Fatal Error");
-            System.exit(0);
-        }
-    }
-
     public void setMonth(int monthNumber)
     {
         if ((monthNumber <= 0) || (monthNumber > 12))
@@ -183,14 +209,8 @@ public class DateFifthTry {
 
         
     }
-    public void happyGreeting()
-    {
 
-        while (day > 0)
-        {
-            System.out.println("Happy Days!");
-            --day;
-        }
+
+
 
     }
-}
